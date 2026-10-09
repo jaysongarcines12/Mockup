@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jay | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#home"><span class="dot">J</span>Jay</a>
+<nav id="nav">
+<a href="#home" data-p="home">Home</a>
+<a href="#projects" data-p="projects">Projects</a>
+<a href="#about" data-p="about">About</a>
+<a href="#contact" data-p="contact">Contact</a>
+<button id="theme" aria-label="Toggle light and dark theme" title="Toggle theme">🌓</button>
+</nav></div></header>
+
+<main class="wrap">
+
+<section class="page" id="home">
+<div class="split">
+<div>
+<p class="mute" style="margin-bottom:6px">Hi, I'm</p>
+<h1><span class="grad">Jay</span></h1>
+<div class="role"><span id="typed"></span><span class="cursor"></span></div>
+<p style="margin-top:14px">I build websites and apps for school and for local needs. I mostly work with Laravel and Flutter, and I'm getting better at both with every project.</p>
+<div class="row"><a class="btn" href="#projects">See my projects</a><a class="btn alt" href="#contact">Contact me</a></div>
+</div>
+<div class="avatar"><img src="jay.jpg" alt="Photo of Jay" width="560" height="560"></div>
+</div>
+<div class="stats rv">
+<div class="stat"><b data-n="6">0</b><span>Projects</span></div>
+<div class="stat"><b data-n="3">0</b><span>Laravel builds</span></div>
+<div class="stat"><b data-n="2">0</b><span>Capstone proposals</span></div>
+</div>
+<h2 class="rv">Selected projects</h2>
+<div class="cols" id="featured"></div>
+<p style="margin-top:20px"><a href="#projects">View all projects →</a></p>
+</section>
+
+<section class="page" id="projects">
+<h1>Projects</h1>
+<p class="mute">Things I have built or proposed. Tap a card for details.</p>
+<div class="chips" id="chips" role="group" aria-label="Filter projects"></div>
+<div class="cols" id="grid"></div>
+</section>
+
+<section class="page" id="about">
+<div class="split">
+<div>
+<h1>About</h1>
+<p>I'm Jay, a BSIT student. I want to work as a web developer, so most of my school projects are websites and apps that solve a real need.</p>
+<h2>Skills</h2>
+<div class="skills">
+<span class="skill">Laravel</span><span class="skill">Flutter</span><span class="skill">GetX</span><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">Arduino</span><span class="skill">ESP32</span><span class="skill">GIS</span>
+</div>
+<h2>Education</h2>
+<div class="info"><h3>Bachelor of Science in Information Technology</h3><p>In progress</p></div>
+</div>
+<div class="avatar"><img src="jay.jpg" alt="Photo of Jay" width="560" height="560"></div>
+</div>
+</section>
+
+<section class="page" id="contact">
+<div class="split" style="align-items:start">
+<div>
+<h1>Contact</h1>
+<p class="mute">Send me a message and I will reply.</p>
+<label for="n">Name</label><input id="n" autocomplete="name">
+<label for="e">Email</label><input id="e" type="email" autocomplete="email">
+<label for="m">Message</label><textarea id="m" rows="5"></textarea>
+<div class="err" id="err"></div>
+<div class="row" style="margin-top:6px"><button class="btn" id="send">Send message</button></div>
+<div id="ok"></div>
+</div>
+<div>
+<div class="info"><h3>Email</h3><p>jay@example.com</p></div>
+<div class="info"><h3>Location</h3><p>Davao del Sur, Philippines</p></div>
+</div>
+</div>
+</section>
+
+</main>
+<footer><div class="wrap">Jay · BSIT student portfolio</div></footer>
+
+<dialog id="dlg"><button id="mclose" aria-label="Close">✕</button><div id="mhead"></div><div id="mbody"></div></dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
